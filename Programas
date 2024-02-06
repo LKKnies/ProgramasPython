@@ -1,0 +1,403 @@
+#1)	Faça um algoritmo que solicite o número de horas que um trabalhador realiza por dia, solicite o número de dias trabalhados em um mês e apresente o número total de horas trabalhadas no mês. 
+
+print("Digite o número de horas trabalhadas dias")
+numhorasdia = int(input())
+print("Digite o número de dias trabalhados")
+numdiastrab = int(input())
+numtothoras = numhorasdia * numdiastrab
+print("O número total de horas é", numtothoras)
+
+#2)	Faça um algoritmo para calcular a quantidade de carne necessária para um churrasco de acordo com o número de pessoas convidadas. Considere que todas são adultas e que um adulto consome 250 gramas de carne por refeição.
+
+print("Digite o número de pessoas convidadas para o churrasco")
+numpessoas = int(input())
+print("A quantidade de carne consumida por uma pessoa é, 250 gramas")
+qtdcarne = numpessoas * 250
+print("A quantidade de carne necessária para um churrasco em gramas é de", qtdcarne)
+
+#3)	Faça um algoritmo que calcule o valor de reembolso de despesas de combustível de um funcionário. Considere que o carro tem o consumo de 1 litro de gasolina a cada 13km rodado. E o preço do litro de gasolina é de R$ 2,20.
+
+print("Digite a quantidade de km rodados pelo funcionário")
+kmrodados = int(input())
+print("A cada 13 km rodados, o carro gasta 1 litro de gasolina, então:")
+qtdgasolina = kmrodados / 13
+print("O preço do litro da gasolina é de R$2,20, então:")
+valortot = qtdgasolina * 2.20
+print("O valor de reembolso de despesas de combustível é de R$", valortot)
+
+#4)	Construa um algoritmo que retorne o valor total da revelação de um filme de 24 poses, solicite o número de fotos reveladas. E considere que o valor unitário da revelação por foto é de R$ 0,90.
+
+print("“Digite o número de fotos reveladas”")
+numfotos = int(input())
+print("Cada foto custa R$ 0,90, então:")
+valortotal = numfotos * 0.9
+print("O valor total da revelação de um filme de 24 poses é R$", valortotal)
+
+#5)	Construa um algoritmo que mostre o percentual que uma despesa mensal representa do seu salário total.
+
+print("Digite o seu salário total”")
+salariotot = int(input())
+print("Digite  a sua despesa mensal")
+despmens = int(input())
+percentualfinal = despmens / salariotot * 100
+print("O percentual que uma despesa mensal representa do seu salário total é de", percentualfinal)
+
+#6)	Construa um algoritmo que calcule a quantidade total de ração consumida por um cachorro por mês. Solicite a quantidade consumida por refeição e o numero de refeições por dia.
+
+print("Digite a quantidade de ração consumida por refeição em gramas")
+racaoref = int(input())
+print("Digite o número de refeições que um cachorro faz por dia")
+racaodia = int(input())
+racaomes = racaoref * racaodia * 30
+print("A quantidade total de ração consumida por um cachorro por mês em gramas é de", racaomes)
+
+#7)	Faça um algoritmo que calcule o valor da multa por atraso de pagamento de um boleto bancário. Solicite o valor do boleto e o percentual de multa.
+
+print("Digite o valor total do boleto em reais")
+valorboleto = int(input())
+print("Digite o percentual de atraso da multa por mês")
+percmulta = int(input())
+valortot = valorboleto / 100 * percmulta + valorboleto
+print("O valor da multa por atraso de boleto bancário é de R$",valortot)
+
+#8)	Faça um algoritmo que calcule o percentual de espaço livre de um HD, sabendo que o HD tem o tamanho máximo de 40.000 megabytes. Solicite a quantidade livre em megabytes.
+
+print("Digite a quantidade de espaço livre do HD em megabytes")
+esplivre = int(input())
+print("O HD tem o tamanho máximo de 40.000 megabytes,então:")
+esplivretot = esplivre * 100 / 40000
+print("O percentual de escaço livre de um HD em megabytes é de",esplivretot)
+
+#9) Escreva o algoritmo de um programa que solicite dois números quaisquer ao usuário, se os números forem iguais mostre uma mensagem e mostre a media dos dois, caso contrário mostre qual o maior número e qual o menor número. 
+
+print("Digite um número")
+num1 = int(input())
+print("Digite outro número")
+num2 = int(input())
+if num1 == num2:
+    print("São iguais")
+    media = (num1 + num2) / 2
+    print("A média é", media)
+else:
+    print("Não são iguais")
+    if num1 > num2:
+        print("O maior é", num1)
+        print("O menor é", num2)
+    else:
+        print("O maior é", num2)
+        print("O menor é", num1)
+
+#10) Escreva um algoritmo que defina a faixa etária de uma pessoa e apresente a faixa em tela. Caso a idade seja até 20 anos ele será considerado Jovem. Se a idade esteja entre 21 até 69 ele será considerado “Adulto”. Caso seja maior ou igual a 70 será considerado “Idoso”.
+
+print("Digite a sua idade")
+idade = int(input())
+if idade < 21:
+    print("Você é considerado Jovem")
+else:
+    if idade > 70:
+        print("Você é considerado Idoso")
+    else:
+        print("Você é considerado Adulto")
+
+#11) Escreva um algoritmo que solicite a quantidade total em miligramas de colesterol mau existente no sangue de um paciente. Considerando que o valor máximo ideal para uma pessoa saudável é 130mg, caso a quantidade esteja menor apresente uma mensagem indicando que esta menor. Caso esteja acima, calcule o percentual que esta acima e apresente uma mensagem.
+
+print("Digite a quantidade total em miligramas de colesterol mau existente no sangue do paciente")
+qtdetotalcol = float(input())
+if qtdetotalcol < 131:
+    print("Você está saudável")
+else:
+    percentualcol = (qtdetotalcol * 100) / 130
+    print("Colesterol acima do normal")
+    print("Percentual acima do máximo ideal para uma pessoa saudável é de", percentualcol)
+ 
+#12) Escreva um algoritmo que calcule o número de páginas mínimo que um leitor deve ler para terminar um livro em um determinado numero de dias informado. Caso o número de paginas a ler por dia for maior que 100, informe ao usuário que é impossível de realizar a leitura, caso contrário apresente o número de paginas.
+
+print("Digite o número de páginas que faltam para o leitor ler")
+numpaginas = int(input())
+print("Digite o número de dias que o leitor tem que terminar o livro")
+numdias = int(input())
+numpagdias = numpaginas / numdias
+if numpagdias > 100:
+    print("Não é possível terminar de ler o livro")
+else:
+    print("A quantidade de páginas que precisam ser lidas por dia para terminar o livro é de",numpagdias)
+
+#13)	Escreva um algoritmo que calcule o valor da multa (em UFIR) que um motorista deve receber de acordo com a velocidade de seu carro. Acima de 60km/h e ate 100km/h multa media 60 UFIR, acima de 100 km/h até 160km/h grave 120 UFIR, e acima de 160km/h gravíssima 180 UFIR
+
+print("Digite a velocidade que seu carro estava em km/h")
+velocidade = float(input())
+if  velocidade < 61:
+    print("Você não vai ganhar multa")
+else:
+    if velocidade > 60 and velocidade < 101:
+        print("O valor da sua multa é de 60 UFIR")
+    else:
+        if velocidade > 100 and velocidade < 161:
+            print("O valor da sua multa é de 120 UFIR")
+        else:
+            print("O valor da sua multa é de 180 UFIR")
+
+#14)	Escreva um algoritmo que calcule o numero de prateleiras necessárias para guardar uma quantidade informada de livros. Considerando que em média uma prateleira comporta 32 livros.
+
+print("Digite  a quantidade de livros precisam ser guardados")
+qtdelivros = int(input())
+print("Em cada prateleira comporta em média 32 livros, então:")
+numprateleiras = qtdelivros / 32
+print("A quantidade de prateleiras necessárias para guardar todos os livros é de",numprateleiras)
+
+#15)	Escreva um algoritmo que calcule o valor de uma chamada de telefone. Deverá ser informado a quantidade de minutos falados durante a ligação além de sua origem. Considere que uma ligação “local” custa R$0.020, ligação “intermunicipal” R$0,08 e “interestadual” R$0,1.
+
+print("Digite a quantidade de minutos falados durante a ligação")
+minutosfalados = int(input())
+print("Digite qual o tipo da sua ligação, se ela é local, intermunicipal ou interestadual")
+tipoligacao = int(input())
+if tipoligacao == local:
+    total = minutos falados * 0.020
+    print("O valor da chamada é igual a",total)
+else:
+    if tipoligacao == intermunicipal:
+        totaltotal = minutos falados * 0.08
+        print("O valor da chamada é igual a",totaltotal)
+    else:
+        totaltotaltotal = minutosfalados * 0.1
+        print("O valor da chamada é igual a",totaltotaltotal)
+
+#16)	Escreva um algoritmo que calcule o valor de desconto que será oferecido ao comprador de uma loja de acordo com o valor da compra: compras até R$100 desconto de 5%, compras maiores que R$ 100 e ate R$400 desconto de 10%, e acima de R$ 400 desconto de 13%. Após o calculo do valor com desconto, acrescente o valor da taxa de entrega que é de R$ 1,5 por item comprado.
+
+print("Digite quantos itens você comprou")
+qtdeitens = int(input())
+print("Digite o valor total da sua compra")
+valortotal = int(input())
+if valortotal < 101:
+    valorfinal = (valortotal / 100) * 5
+    frete = qtdeitens * 1.5
+    total = valorfinal + frete
+    print("O valor total a pagar é de R$",total)
+else:
+    if valortotal > 400:
+        valorfinal = (valortotal / 100) * 13
+        frete = qtdeitens * 1.5
+        total = valorfinal + frete
+        print("O valor total a pagar é de R$",total)
+    else:
+        valorfinal = (valortotal / 100) * 10
+        frete = qtdeitens * 1.5
+        total = valorfinal + frete
+        print("O valor total a pagar é de R$",total)
+
+#17)	Construa um algoritmo que calcule o consumo de combustível de um veículo qualquer baseado nas informações de quilometragem  inicial e final de um percurso, e a quantidade de gasolina consumida em litros. Caso o consumo esteja entre 10 e 16 litros/km mostre a mensagem “consumo normal”, caso seja maior que 16 litros/km apresente a mensagem “consumo anormal”.
+
+print("Digite a distância do percurso em km")
+distancia = int(input()
+print("Digite a quantidade de gasolina gasta em litros")
+gasolina = int(input())
+totallitroskm = distancia / gasolina
+if totallitroskm > 16:
+    print("O consumo de gasolina está anormal, a cada litro de gasolina o carro anda em km” a distância de",totallitroskm)
+else:
+    print("O consumo de gasolina está normal, a cada litro de gasolina o carro anda em km a distância de",totallitroskm)
+
+#18) Escreva um algoritmo que calcule o valor de Imposto de Renda que uma Pessoa Física deve pagar de acordo com o valor total de seu rendimento anual: abaixo de R$19.200 isento, acima deste valor e até R$30.000 8%. Mais que R$30.000 anuais 11%.
+
+print("Digite o seu rendimento anual em R$")
+rendaanual = int(input())
+if rendaanual < 19200:
+    print("Você não precisa pagar nada")
+else:
+    if rendaanual > 30000:
+        total = (rendaanual / 100) * 11
+        print("O valor total a pagar em R$ é de",total)
+    else:
+        total = (rendaanual / 100) * 8
+        print("O valor total a pagar em R$ é de",total)
+
+#19) Escreva o algoritmo em FLUXOGRAMA que calcule o valor total de aluguel e taxas a serem cobrados de um morador. Solicite o valor do aluguel, o valor do condomínio, considere que o valor do metro cubico do gas é de R$ 1,80 e o valor da taxa de consumo de agua é de R$ 0,60 por metro cubico de agua consumida. Apresente também o valor de 5% do valor total do aluguel que pode ser dado como desconto caso seja pago 5 dias antes do vencimento.
+
+print("Digite o valor do aluguel em R$")
+valoraluguel = int(input())
+print("Digite o valor do condomínio em R$")
+valorcondominio = int(input())
+print("Digite a quantidade de gás gasto em metros cúbicos")
+gas = int(input())
+print("Digite a quantidade de água gasta em metros cúbicos")
+agua = int(input())
+totalgas = gas * 1.8
+totalagua = agua * 0.6
+alugueltotal = valoraluguel + valorcondominio + totalgas + totalagua
+desconto = alugueltotal / 100 * 5
+print("O seu desconto caso o aluguel seja pago pelo menos 5 dias antes do vencimento é de",desconto)
+print("Digite quantos dias antes do vencimento foi pago o aluguel")
+dias = int(input())
+if dias < 5:
+    aluguelfinal = alugueltotal - desconto
+    print("O valor total a pagar em R$ é"aluguelfinal)
+else:
+    aluguelfinal = alugueltotal
+    print("O valor total a pagar em R$ é"aluguelfinal)
+
+#20) Uma loja utiliza o código V para transação à vista e P para transação a prazo. Faça um programa que receba o código e o valor de quinze transações, calcule e mostre:
+#a. O valor total das compras à vista;
+#b. O valor total das compras à prazo;
+#c. O valor total das compras efetuadas;
+#d. O valor da primeira prestação das compras a prazo juntas, sabendo-se que serão pagas em três vezes;
+#e. O maior valor entre todas as compras a prazo;  
+#f. O menor valor entre todas as compras a vista;
+
+omaiorprazo = 0
+omenorvista = 0
+somavista = 0
+somaprazo = 0
+for contadortransacao in range(15):
+  print("Transação: ", contadortransacao + 1)
+  print("Digite o tipo da transação, digite V para transação à vista ou P para transação à prazo")
+  transacao = input()
+  if transacao == 'V' or transacao == 'v':
+    print("Digite o valor da transação à vista")
+    transacaovista = int(input())
+    somavista = somavista + transacaovista
+    if contadortransacao == 0:
+      omenorvista = transacaovista
+    if transacaovista < omenorvista:
+      omenorvista = transacaovista
+  if transacao == 'P' or transacao == 'p':
+    print("Digite o valor da transação à prazo")
+    transacaoprazo = int(input())
+    somaprazo = somaprazo + transacaoprazo
+    if transacaoprazo > omaiorprazo:
+      omaiorprazo = transacaoprazo
+  valortotal = somavista + somaprazo
+  primeiraprestacao = somaprazo / 3
+print("O valor total das compras à vista é de R$ %.2f" % somavista) 
+print("O valor total das compras à prazo é de R$ %.2f" % somaprazo)
+print("O valor total das compras efetuadas é de R$ %.2f" % valortotal)
+print("O valor da primeira prestação das compras a prazo juntas é de R$ %.2f" % primeiraprestacao)
+print("O maior valor entre todas as compras à prazo é de R$ %.2f" % omaiorprazo)
+print("O menor valor entre todas as compras à vista é de R$ %.2f" % omenorvista)
+
+#21) Faça um programa para ler e imprimir uma matriz 2 × 4 de números inteiros.
+
+import random
+tabela1 = [[0] * 4 for a in range (2)]
+for linha in range(2):
+    for coluna in range(4):
+       tabela1[linha][coluna] = random.randint(0,100)
+for linha in range(2):
+    for coluna in range(4):
+        print(tabela1[linha][coluna], end=" ")
+    print()
+
+#22) Ler uma matriz A de duas dimensões com 7 linhas e 7 colunas. Ao final apresentar o total de elementos pares existentes dentro da matriz.
+
+import random
+contapar = 0
+tabela2 = [[0] * 7 for b in range (7)]
+for linha in range(7):
+    for coluna in range(7):
+       tabela2[linha][coluna] = random.randint(0,100)
+for linha in range(7):
+    for coluna in range(7):
+        if tabela2[linha][coluna] % 2 == 0:
+            contapar += 1
+        print(tabela2[linha][coluna], end=" ")
+    print()
+print(f"O total de elementos pares existentes dentro da matriz é de {contapar} números")
+
+#23) Dada a seguinte matriz, calcule:
+# - A soma dos elementos de primeira coluna;
+# - O produto dos elementos da primeira linha;
+# - A soma de todos os elementos;
+# - O produto da diagonal principal.
+
+#   1	2	3	4
+#   5	6	7	8
+#   9	10	11	12
+#   13	14	15	16
+
+tabela3 = [[0] * 4 for c in range (4)]
+contador = 1
+for linha in range(4):
+    for coluna in range(4):
+        tabela3[linha][coluna] = contador
+        contador += 1
+        print(tabela3[linha][coluna], end=" ")
+    print()
+somacoluna1 = 0
+for linha in range(4):
+    somacoluna1 += tabela3[linha][0]
+print("A soma dos elementos de primeira coluna é", somacoluna1)
+produtolinha1 = 1
+for coluna in range(4):
+    produtolinha1 *= tabela3[0][coluna]
+print("O produto dos elementos da primeira linha é", produtolinha1)
+somadetudo = 0
+for linha in range(4):
+    for coluna in range(4):
+        somadetudo += tabela3[linha][coluna]
+print("A soma de todos os elementos é", somadetudo)
+produtodiagonalprincipal = 1
+for c in range(4):
+    produtodiagonalprincipal *= tabela3[c][c]
+print("O produto da diagonal principal é", produtodiagonalprincipal)
+
+#24)	Faça um programa que carregue uma matriz 3x5 com números inteiros, calcule e mostre a quantidade de elementos entre 15 e 20.
+
+import random
+tabela1 = [[0] * 5 for a in range (3)]
+for linha in range(3):
+    for coluna in range(5):
+       tabela1[linha][coluna] = random.randint(0,100)
+contaentre15e20 = 0
+for linha in range(3):
+    for coluna in range(5):
+        if tabela1[linha][coluna] >= 15 and tabela1[linha][coluna] <= 20:
+            contaentre15e20 = contaentre15e20 + 1
+        print(tabela1[linha][coluna], end=" ")
+    print()
+print("A quantidade de elementos entre 15 e 20 é de", contaentre15e20)
+
+#25)	Faça um programa que receba as vendas semanais (de um mês) de cinco vendedores de uma loja e armazene essas vendas em uma matriz. Calcule e mostre:
+# a.	O total de vendas do mês de cada vendedor
+# b.	O total de vendas de cada semana (todos os vendedores juntos)
+# c.	O total de vendas do mês
+'''
+import random
+tabela2 = [[0] * 5 for b in range (4)]
+for linha in range(4):
+    for coluna in range(5):
+       tabela2[linha][coluna] = random.randint(0,100)
+totaldevendasdomesdovendedor1 = 0
+totaldevendasdomesdovendedor2 = 0
+totaldevendasdomesdovendedor3 = 0
+totaldevendasdomesdovendedor4 = 0
+totaldevendasdomesdovendedor5 = 0
+for linha in range(4):
+    totaldevendasdomesdovendedor1 += tabela2[linha][0]
+    totaldevendasdomesdovendedor2 += tabela2[linha][1]
+    totaldevendasdomesdovendedor3 += tabela2[linha][2]
+    totaldevendasdomesdovendedor4 += tabela2[linha][3]
+    totaldevendasdomesdovendedor5 += tabela2[linha][4]
+totaldevendasdasemana1 = 0
+totaldevendasdasemana2 = 0
+totaldevendasdasemana3 = 0
+totaldevendasdasemana4 = 0
+for coluna in range(5):
+    totaldevendasdasemana1 += tabela2[0][coluna]
+    totaldevendasdasemana2 += tabela2[1][coluna]
+    totaldevendasdasemana3 += tabela2[2][coluna]
+    totaldevendasdasemana4 += tabela2[3][coluna]
+totaldevendasdomes = 0
+for linha in range(4):
+    for coluna in range(5):
+        totaldevendasdomes += tabela2[linha][coluna]
+        print(tabela2[linha][coluna], end=" ")
+    print()
+print("O total de vendas do vendedor 1 no mês foi de", totaldevendasdomesdovendedor1)
+print("O total de vendas do vendedor 2 no mês foi de", totaldevendasdomesdovendedor2)
+print("O total de vendas do vendedor 3 no mês foi de", totaldevendasdomesdovendedor3)
+print("O total de vendas do vendedor 4 no mês foi de", totaldevendasdomesdovendedor4)
+print("O total de vendas do vendedor 5 no mês foi de", totaldevendasdomesdovendedor5)
+print("O total de vendas da semana 1 do mês foi de", totaldevendasdasemana1)
+print("O total de vendas da semana 2 do mês foi de", totaldevendasdasemana2)
+print("O total de vendas da semana 3 do mês foi de", totaldevendasdasemana3)
+print("O total de vendas da semana 4 do mês foi de", totaldevendasdasemana4)
+print("O total de vendas do mês foi de", totaldevendasdomes)
